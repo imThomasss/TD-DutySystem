@@ -14,7 +14,7 @@ Here is a list of the ace perms, that you will need to allow in your server.cfg 
 
 Here is an example on how to use the export to get the players active Job.
 
-local job = TDGetCurrentJob()
+local job = exports["TD-DutySystem"]:TDGetCurrentJob()
   if job == "BCSO" or job == "SAHP" or job == "LSPD" or job == "SAFR" then
     -- If they are on duty as one of these jobs then allow them to do something here
   else
@@ -23,7 +23,7 @@ local job = TDGetCurrentJob()
   
   other example
   
-  local job = TDGetCurrentJob()
+  local job = exports["TD-DutySystem"]:TDGetCurrentJob()
   if job == "not set" then 
     -- If they are not on duty as one of these jobs then allow them to do something here
   else

@@ -4,7 +4,7 @@ function TDGetCurrentJob()
   
   --example of use:
   --[[
-    local job = TDGetCurrentJob()
+    local job = exports["TD-DutySystem"]:TDGetCurrentJob()
   if job == "BCSO" or job == "SAHP" or job == "LSPD" or job == "SAFR" then
     -- If they are on duty as one of these jobs then allow them to do something here
   else
@@ -13,7 +13,7 @@ function TDGetCurrentJob()
   
   other example
   
-  local job = TDGetCurrentJob()
+  local job = exports["TD-DutySystem"]:TDGetCurrentJob()
   if job == "not set" then 
     -- If they are not on duty as one of these jobs then allow them to do something here
   else
