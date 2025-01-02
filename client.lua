@@ -86,6 +86,7 @@ AddEventHandler("TD:OnDuty:LSPD", function()
         currentJob = "not set"
         onduty = false
         inServiceCops = false
+        TriggerServerEvent("eblips:remove", ids)
       end
       lib.notify({
           id = 'idkijustworkherelol',
@@ -207,6 +208,7 @@ AddEventHandler("TD:OnDuty:SAHP", function()
         currentJob = "not set"
         onduty = false
         inServiceCops = false
+        TriggerServerEvent("eblips:remove", ids)
       end
       lib.notify({
           id = 'idkijustworkherelol',
@@ -289,7 +291,7 @@ AddEventHandler("TD:OnDuty:SAFR", function()
       })
   else
     lib.notify({
-      id = 'jobnotisheriff',
+      id = 'jobnotishafr',
       title = Config.ServerName,
       description = 'Your Job is currently set to ' .. job .. '. Please make sure you have cleared your job and try again!',
       showDuration = true,
